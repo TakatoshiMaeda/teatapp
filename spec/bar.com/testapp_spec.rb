@@ -12,7 +12,7 @@ describe 'port 80' do
   it { should be_listening }
 end
 
-describe '/etc/nginx/sites-enabled/testapp' do
+describe "/etc/nginx/sites-enabled/#{app_name}" do
   it { should be_file }
   it { should contain "listen 80 default deferred;" }
   it { should contain "server_name #{server_name};" }
