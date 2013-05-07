@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 server_name = ""
-app_name = ""
+app_name = "testapp"
 
 describe 'nginx' do
   it { should be_enabled   }
